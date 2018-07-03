@@ -1,0 +1,751 @@
+/*====================================================
+                DEFAULT VALUES:
+
+                Font Family                 : Roboto Condensed
+                
+                Greenish Blue               : #34c6d3       (Buttons, Icons, Links, Lines & Backgrounds)
+                Steel Gray                  : #41464b       (Headings)
+                Blue Bayoux                 : #64707b       (Paragraphs)
+                White                       : #fff          (Text With Black Backgrounds)
+                Black                       : #000 
+
+======================================================*/
+
+
+/* ==================RESET CSS=====================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==================END OF RESET CSS=====================*/
+
+/* ==================HOME CSS=====================*/
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+html{
+    height: 100%;
+   
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+
+#home {
+    height: 100vh;
+}
+
+.large-hero {
+    position: relative;
+    height: 100%;
+    background: url('../img/bg-home.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.large-hero__text {
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.large-hero__subtitle {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.large-hero .button {
+    padding:0.5rem;
+    font-size:1.2rem;
+    color:#fff;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: 0;
+}
+
+.large-hero .button:hover {
+    background-color: #fff;
+    color:#41464b;
+}
+
+/* ==================Services CSS=====================*/
+
+.clear-fix::after, .clear-fix::before{
+    content:'';
+    clear:both;
+    display:table;
+}
+
+ .page-heading h3{
+    text-align:center;
+    font-size:1.7rem;
+    color:#41464b;
+    font-weight:700;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+ .page-heading h3::after{
+    content:'';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color:#34c6d3;
+    position: absolute;
+    top: 75%;
+    left:48%;
+}
+
+.service-item {
+    padding:1rem;
+    margin-bottom: 1.2rem;
+}
+.service-item:hover .service-item__icon {
+    background-color: #34c6d3;
+    color:#fff;
+}
+
+.service-item__icon{
+    float:left;
+    color: #34c6d3;
+    padding: 1rem;
+    width: 75px;
+    height: 75px;   
+    margin-right: 1.2rem;
+}
+
+.service-item__title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.service-item__desc {
+    margin: 0;
+    padding-left: 2rem;
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* ==================About Us CSS=====================*/
+
+#about {
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+#about .about-section {
+    height: 700px;
+    width: 40%;
+    float: left;
+    position: relative;
+}
+
+#about .about-desc {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+#about .page-heading h3{
+    margin-left: -9.5rem;
+}
+
+#about .page-heading h3::after {
+    content:'';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color:#34c6d3;
+    position: absolute;
+    top: 75%;
+    left:48%;
+}
+
+#about .about-content {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 1.2px;
+    line-height: 1.7;
+   
+}
+
+#about .button {
+    padding-left:1.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+    margin-bottom: 1.5rem;
+    font-size:1.2rem;
+    color:#34c6d3;
+    background: transparent;
+    border:2px solid #34c6d3;
+    border-radius: 0;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#about .button:hover {
+    color:#fff;
+    background-color: #34c6d3;
+}
+
+
+
+#about .bg-diagonal {
+    background:url('../img/bg-about.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    border-top:700px solid transparent;
+    border-left:200px solid #fff;
+    float: right;
+    width: 60%;
+}
+
+/* ==================Work CSS=====================*/
+
+#work .row > div {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+#work img {
+    transition: transform 0.2s ease-out;
+}
+
+#work img:hover {
+    transform: scale(1.5);
+}
+
+/* ==================Team CSS=====================*/
+
+#team{
+    padding-top: 1.5rem;
+}
+#team .team-member{
+    text-align: center;
+    font-weight: 700;
+    color:#41464b;
+
+}
+
+
+
+#team .team-member .team-member__name{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+#team .team-member .team-member__designation {
+    font-size: 1.1rem;
+    color:#34c6d3;
+    font-style: italic;
+}
+
+#team .team-member ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#team .team-member ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+#team .team-member ul li i{
+    color:#41464b;
+}
+#team .team-member ul li:hover i{
+    color:#34c6d3;
+}
+
+/* ==================Testimonail CSS=====================*/
+
+#testimonials{
+    background: url('../img/bg-testimonials.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#testimonials img{
+    width: 120px;
+    height: auto;
+    margin:0 auto;
+    padding: 1.2rem;
+}
+
+#testimonials .page-heading h3{
+    color:#fff;
+}
+
+#testimonials .testimonial {
+    text-align: center;
+}
+
+#testimonials .testimonial strong{
+    display: block;
+    font-weight: 700;
+    color:#fff;    
+    padding: 0.5rem;
+    font-size: 1.05rem;
+}
+
+#testimonials .testimonial blockquote {
+    font-size: 1rem;
+    color:#fff;
+    display: block;
+    font-style: italic;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#testimonials .testimonial blockquote::before{
+    content:'\201C';
+    display: block;
+    color:#fff;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#testimonials .testimonial blockquote::after{
+    content:'\201D';
+    color:#fff;
+    position: absolute;
+    display: block;
+    top:50%;
+    bottom: 0;
+    right: 10%;
+    font-size: 2rem;
+}
+
+#testimonials .testimonial p{
+    padding: 1.2rem;
+}
+
+#testimonials .testimonial p span{
+    color:#fff;    
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* ==================Pricing CSS=====================*/
+#pricing .pricing-box {
+    text-align: center;
+    padding:3rem;
+    border:1.5px solid #34c6d3;
+    margin-top: 2.5rem;
+}
+
+.pricing-box .pricing__title {
+    font-size: 1rem;
+    display: inline-block;
+    background-color: #34c6d3;
+    color:#fff;
+    font-weight: 700;
+    padding:0.5rem 1rem 0.5rem 1rem;
+    margin:0 auto;
+}
+
+
+.pricing-box .pricing__button {
+    color:#34c6d3;
+    border:2px solid #34c6d3;
+    border-radius: 0;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.pricing-box .pricing__value {
+    font-size: 3rem; 
+    color:#41464b;
+    font-weight: 700;
+    padding:3rem 0.5rem 2rem 0.5rem;
+    margin:0 auto;
+}
+
+.pricing-box .pricing__value  sup {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.pricing-box .pricing__specs {
+    font-size: 1.1rem;
+    color:#64707b;
+    padding:0.8rem;
+    text-transform: uppercase;
+}
+
+#pricing .premium {
+    background-color: #34c6d3;
+    color:#fff;
+    margin: 0;
+    padding:5.5rem 0;
+
+}
+
+#pricing .premium .pricing__title{
+    background-color: #fff;
+    color: #34c6d3;
+}
+
+#pricing .premium .pricing__specs{
+    color:#fff;
+}
+
+#pricing .premium .pricing__button {
+    color:#fff;
+    border: 2px solid #fff;
+    
+}
+
+/* ==================Stats CSS=====================*/
+
+#stats {
+    margin-top: 3rem;
+    background: url('../img/bg-stats.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#stats .stats-container{
+  background-color: rgba(0,0,0,0.8);
+}
+
+#stats .stats-container .page-heading h3{
+    color:#fff;
+    
+}
+
+#stats .stats-item{
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+
+#stats .stats-item i{
+    color:#34c6d3;
+    padding: 1.5rem;
+}
+
+#stats .stats-item h2{
+    color:#fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+#stats .stats-item p{
+    padding-top: 0.7rem;
+    color:#fff;
+    font-weight: normal;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+#stats .stats-item h2 span{
+    display: inline-block;
+}
+
+/* ==================Clients CSS=====================*/
+
+#clients .client {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* ==================Footer CSS=====================*/
+
+footer{
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+   
+    background-color: #41464b;
+ 
+}
+
+
+
+footer h2{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color:#fff;
+    font-weight: 700;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}
+
+
+
+footer p{
+    padding-top: 0.5rem;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.6;
+    margin: 0;
+    
+    
+}
+
+footer p.about{
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+    max-width: 500px;
+}
+
+footer p strong{
+    font-weight: 700;
+}
+
+footer .headquarters{
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    
+}
+
+footer .headquarters p{
+    margin: 0;
+    line-height: 1.3;
+}
+
+footer .contact-details p{
+    margin: 0;
+    padding: 0;
+}
+
+footer .icons{
+    margin-left: -1.2rem;
+}
+
+footer .icons i{
+    color: #fff;
+   padding: 1.2rem;
+   cursor: pointer;
+    
+}
+
+footer .icons i:hover {
+    color:#34c6d3;
+}
+
+footer .form-control {
+    background-color: #41464b;
+    border:0.5px solid #fff;
+    color:#64707b;
+    border-radius:0;
+    padding:1rem;
+    margin-top:1rem;
+  
+}
+
+footer input.form-control {
+    height: 2.5rem;
+}
+
+footer form .form-group button{
+    border-radius: 0;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    color:#fff;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    background-color: #41464b;
+    border:0.5px solid #fff;
+    
+}
+
+footer form .form-group button:hover{
+    background-color: #fff;
+}
+
+footer .bottom {
+    background-color: rgba(0,0,0,0.1);
+  
+}
+
+footer .bottom .copy p{
+  padding-top: 2.5rem;
+  color:#64707b;
+}
+
+footer .bottom {
+    padding-right: 2.5rem;
+}
+
+footer .bottom .menu {
+    margin-right: -2.5rem;
+}
+
+footer .bottom .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .bottom .menu ul li{
+    float: left;
+    color:#fff;
+}
+
+footer .bottom .menu ul li a{
+    display:inline-block;
+    color:#fff;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+footer .bottom .menu ul li a:hover{
+    color:#34c6d3;
+}
+
+footer a.back-to-top{
+    position: fixed;
+    bottom: 1.2rem;
+    right:1.2rem;
+    background-color: #34c6d3;
+    color:#fff;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border-radius: 0;
+    display: none;
+}
+
+/*======== LOGO =======*/
+
+div.main{
+    overflow: hidden;
+}
+
+/*======== HEADER CSS =======*/
+
+button.navbar-toggle{
+    border:1px solid #fff;
+    margin-right: 2rem;
+}
+
+span.icon-bar{
+    background-color: #fff;
+}
+nav.navbar{
+    padding-top: 1.2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.flam-nav {
+    background-color: rgba(0,0,0,0.7);
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    border:none;
+   
+}
+
+
+
+.navbar ul.nav{
+    float: right;
+}
+
+.navbar ul.nav  a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 0.97rem;
+    text-transform:uppercase;    
+
+}
+
+.navbar ul.nav  a:focus{
+    color:#34c6d3;
+    background: none;
+}
+
+
+
+
+.navbar ul.nav  a:hover{
+    color:#34c6d3;
+    background-color: transparent;
+}
+
+.navbar-collapse{
+    max-height: none !important;
+}
+
+.navbar ul.nav li.active a{
+    color:#34c6d3;
+}
+
+
