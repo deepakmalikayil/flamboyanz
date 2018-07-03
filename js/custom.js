@@ -13,7 +13,7 @@ $(function () {
 $(function () {
 
     $("#work").magnificPopup({
-        delegate: 'a', // child items selector, by clicking on it popup will open
+        delegate: 'a', 
         type: 'image',
         gallery: {
             enabled: true
@@ -129,7 +129,7 @@ $(function () {
 
         event.preventDefault();
 
-        // get/return id like #about, #work, #team and etc
+        
         var section = $(this).attr("href");
 
         $('html, body').animate({
