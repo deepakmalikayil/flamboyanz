@@ -237,7 +237,7 @@ footer .copy{
 
 @media (max-width:480px){
 
-   
+
 
     .large-hero__text{
         font-size: 2rem;
@@ -270,6 +270,10 @@ footer .copy{
 
    #about .button{
     display: none;
+}
+
+footer  a.back-to-top{
+    display: none !important;
 }
    
 }
