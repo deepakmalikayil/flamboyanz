@@ -275,6 +275,10 @@ footer .copy{
 footer  a.back-to-top{
     display: none !important;
 }
+
+#testimonials .testimonial blockquote::after{
+    right: 5%;
+}
    
 }
 
